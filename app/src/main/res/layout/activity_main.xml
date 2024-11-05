@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <!-- Bar -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="#9958b4"
+            android:paddingStart="20dp"
+            android:paddingEnd="8dp"
+            android:gravity="center_vertical">
+
+            <!-- Jam -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="09:41"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp"
+                android:layout_weight="1"/>
+
+            <!-- Icon wifi, baterai, dan sinyal -->
+            <ImageView
+                android:layout_width="70dp"
+                android:layout_height="35dp"
+                android:src="@drawable/icon_bar"
+                android:layout_marginEnd="2dp" />
+        </LinearLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:gravity="center"
+            android:text="Welcome to My Apps"
+            android:textColor="#9958b4"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:layout_width="250dp"
+            android:layout_height="200dp"
+            android:layout_marginTop="80dp"
+            android:layout_gravity="center"
+            android:src="@drawable/coding_3_12"/>
+
+        <!-- Tombol Login -->
+        <Button
+            android:id="@+id/buttonlogin"
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="70dp"
+            android:backgroundTint="#9958b4"
+            android:text="Login"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"/>
+
+        <!-- Tombol Register -->
+        <Button
+            android:id="@+id/buttonregister"
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="16dp"
+            android:backgroundTint="#FFFFFF"
+            android:color="#9958b4"
+            android:text="Register"
+            android:textColor="#9958b4"
+            android:textStyle="bold"
+            app:strokeColor="#9A59B5"
+            app:strokeWidth="1dp" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
